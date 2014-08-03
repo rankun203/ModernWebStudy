@@ -15,6 +15,5 @@ module.exports = (folder, ext, callback) ->
     filteredFiles = []
     for file in files
       filteredFiles.push file if (path.extname file) == ".#{ext}"
-      #console.log file if (path.extname file) == ".#{ext}"
     callback null, filteredFiles
 
