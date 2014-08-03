@@ -1,0 +1,5 @@
+Hello, I'm test.txt, yap, I'm a file, but not a normal file, I'm a file be used to deal with Node.js!
+
+So cool, isn't it?
+
+OK, Do what you like.
