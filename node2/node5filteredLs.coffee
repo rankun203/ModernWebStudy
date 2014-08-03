@@ -1,7 +1,8 @@
 #!/usr/bin/coffee
 
 ###
-List files with specified extension in a specified folder.
+#@author rankun203@gmail.com
+#List files with specified extension in a specified folder.
 ###
 
 fs = require 'fs'

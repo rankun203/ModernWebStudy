@@ -1,7 +1,8 @@
 #!/usr/bin/coffee
 
 ###
-Read a file from file system, then count its lines. in synchronous.
+#@author rankun203@gmail.com
+#Read a file from file system, then count its lines. in synchronous.
 ###
 
 fs = require 'fs'

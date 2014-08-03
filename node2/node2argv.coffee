@@ -1,10 +1,9 @@
 #!/usr/bin/coffee
 
 ###
-@author rankun203@gmail.com
-
-coffee arguments training.
-add all arguments together.
+#@author rankun203@gmail.com
+#coffee arguments training.
+#add all arguments together.
 ###
 
 sum = 0
