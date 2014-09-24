@@ -10,7 +10,7 @@
 
   http = require('http');
 
-  http.get((_ref = process.argv[2]) != null ? _ref : 'http://www.quora.com/', function(res) {
+  http.get((_ref = process.argv[2]) != null ? _ref : 'http://www.baidu.com/', function(res) {
     res.setEncoding('utf8');
     res.on('data', function(data) {
       return console.log(data);
