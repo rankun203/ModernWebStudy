@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/**
+ * Convert Character to lower case.
+ */
 char lower_case(char c);
 
 int main()
