@@ -3,7 +3,7 @@
 
 /**
  * author: rankun203@gmail.com
- * Usage:
+ * Usages:
  *  -With Parameter
  *   CMD: charascii.exe A
  *   OutPut: A: 65
