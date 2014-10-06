@@ -35,8 +35,6 @@ int main()
 		printf("Input Error: Input should be an Integer between 1 and 12.");
 	}
 	
-	getch();
-
 	return 0;
 }
 
