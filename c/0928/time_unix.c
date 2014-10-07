@@ -17,7 +17,7 @@ int main()
 {
 	int i, j, k, mytime[3], chour, cmin, csec;
     gettime(mytime);
-    
+    printf("%lu", sizeof mytime);
     chour = mytime[0];
     cmin = mytime[1];
     csec = mytime[2];
@@ -30,13 +30,12 @@ int main()
 			{
 				printf("%d:%d:%d", i, j, k);
 				sleep(1);
-				system("cls");
+				system("clear");
 			}
 			csec = 0;
 		}
 		cmin = 0;
 	}
-  return 0;
 }
 
 int gettime (int * mytime) {
