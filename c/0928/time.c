@@ -1,7 +1,15 @@
+/**
+ * Digital clock.
+ * @author rankun203@gmail.com
+ */
+
 #include <stdio.h>
 #include <time.h>
 #include <locale.h>
 
+/**
+ * Save current time to a given array.
+ */
 int gettime (int * mytime) {
 	char buff[70];
 	
