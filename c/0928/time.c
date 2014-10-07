@@ -9,6 +9,7 @@
 
 /**
  * Save current time to a given array.
+ * @param int *mytime given array, its length should be at least 3.
  */
 int gettime (int * mytime);
 
