@@ -39,14 +39,17 @@ int main()
 }
 
 int gettime (int * mytime) {
-	char buff[70];
-	
+
+	//time_t->ref: http://en.cppreference.com/w/c/chrono/time_t
 	time_t rawtime;
 	
 	//tm->ref: http://stackoverflow.com/questions/13658756/example-of-tm-use
 	struct tm *timeinfo;
 	
+	//time->ref: http://en.cppreference.com/w/c/chrono/time 
 	time(&rawtime);
+	
+	//localtime->ref: http://en.cppreference.com/w/c/chrono/localtime
 	timeinfo = localtime(&rawtime);
 	
 	mytime[0] = timeinfo->tm_hour;
