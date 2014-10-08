@@ -36,6 +36,7 @@ int main()
 		}
 		cmin = 0;
 	}
+  return 0;
 }
 
 int gettime (int * mytime) {
