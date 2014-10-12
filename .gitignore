@@ -5,6 +5,9 @@ logs
 # .idea
 .idea
 
+# others
+.DS_Store
+
 # Runtime data
 pids
 *.pid
