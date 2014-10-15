@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int isCompN(int n)
 {
-	int j, tmp;
+	int j;
 	for(j=2; j<n; j++)
 	{
-		tmp = n / j;
-		if(tmp * j == n)
+    
+		if(n % j == 0)
 		{
 			return 1;
 		}
@@ -17,6 +18,7 @@ int isCompN(int n)
 int main()
 {
 	int i;
+  printf("Please input an Integer: ");
 	scanf("%d", &i);
 	
 	if(i <= 1)
