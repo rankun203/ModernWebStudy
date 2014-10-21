@@ -13,6 +13,7 @@ double sum(int n);
 int main()
 {
 	int n;
+  printf();
 	scanf("%d", &n);
 	printf("%lf", 1 - sum(n));
 	return 0;
