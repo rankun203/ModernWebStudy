@@ -8,8 +8,28 @@
 
 #include <stdio.h>
 
+//  交换两个变量
+int exchange(int *a, int *b);
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    int a=1, b=2;
+    
+    printf("Before: a=%d, b=%d\n", a, b);
+    
+    exchange(&a, &b);
+    
+    printf("After : a=%d, b=%d\n", a, b);
+    
+    return 0;
+}
+
+int exchange(int *a, int *b)
+{
+    int tmp;
+    
+    tmp = *b;
+    *b = *a;
+    *a = tmp;
+    
     return 0;
 }

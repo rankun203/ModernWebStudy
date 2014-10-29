@@ -8,8 +8,26 @@
 
 #include <stdio.h>
 
+// 返回该数组的长度
+int _strlen(char str[]);
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    
+    int len;
+    static char s[] = "It is";
+    len = _strlen(s);
+    
+    printf("Length of s is %d\n", len);
+    
     return 0;
+}
+
+int _strlen(char str[])
+{
+    int i=0, len=0;
+    while ('\0' != str[i]) {
+        len++;
+        i++;
+    }
+    return len;
 }
