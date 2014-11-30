@@ -14,11 +14,13 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     
     Tree tree;
+
+    cout<<"~树的年龄是："<<tree.getAge()<<" 岁"<<endl;
     
-    cout<<"树生长了4年"<<endl;
+    cout<<"+树生长了4年"<<endl;
     tree.grow(4);
     
-    cout<<"树的年龄是："<<tree.getAge()<<" 岁"<<endl;
+    cout<<"~树的年龄是："<<tree.getAge()<<" 岁"<<endl;
     
     return 0;
 }
