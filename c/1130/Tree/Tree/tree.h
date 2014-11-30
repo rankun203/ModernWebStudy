@@ -19,6 +19,7 @@ private:
 //定义公共成员
 public:
     Tree();
+    ~Tree();
     void grow(int year);
     int getAge();
 };

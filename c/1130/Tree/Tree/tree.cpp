@@ -6,9 +6,17 @@
 //  Copyright (c) 2014 Kun. All rights reserved.
 //
 
+#include "iostream"
 #include "tree.h"
 
-Tree::Tree() {}
+using namespace std;
+
+Tree::Tree() {
+    cout<<"~构造函数执行中"<<endl;
+}
+Tree::~Tree() {
+    cout<<"~析构函数执行中"<<endl;
+}
 void Tree::grow(int year) {
     age = age + year;
 }
