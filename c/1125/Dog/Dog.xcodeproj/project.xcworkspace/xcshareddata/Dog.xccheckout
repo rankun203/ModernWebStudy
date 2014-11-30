@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ECDD1557-9001-42B3-B6E3-3B6472820545</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Dog</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EFE2A51EE803E94DEC4BBB2140A38BC673CF0D9F</key>
+		<string>github.com:rankun203/ModernWebStudy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>c/1125/Dog/Dog.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EFE2A51EE803E94DEC4BBB2140A38BC673CF0D9F</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:rankun203/ModernWebStudy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EFE2A51EE803E94DEC4BBB2140A38BC673CF0D9F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EFE2A51EE803E94DEC4BBB2140A38BC673CF0D9F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ModernWebStudy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
