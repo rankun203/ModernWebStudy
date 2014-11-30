@@ -9,9 +9,14 @@
 #ifndef Tree_tree_h
 #define Tree_tree_h
 
+//定义类：Tree
 class Tree {
+
+//定义私有成员
 private:
     int age;
+    
+//定义公共成员
 public:
     Tree();
     void grow(int year);
