@@ -7,9 +7,18 @@
 //
 
 #include <iostream>
+#include "tree.h"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    Tree tree;
+    
+    cout<<"树生长了4年"<<endl;
+    tree.grow(4);
+    
+    cout<<"树的年龄是："<<tree.getAge()<<" 岁"<<endl;
+    
     return 0;
 }
