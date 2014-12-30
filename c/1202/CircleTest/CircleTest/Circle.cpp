@@ -36,3 +36,5 @@ void Circle::printInfo(){
     cout << "The Circumference of the Circle is: " << getCircumference() << endl;
     cout << "The Area of the Circle is: " << getArea() << endl;
 }
+
+const double Circle::PI = 3.1415926f;

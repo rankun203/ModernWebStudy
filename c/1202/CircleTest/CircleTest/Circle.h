@@ -14,8 +14,9 @@ using namespace std;
 class Circle {
 private:
     float radius;
-    static constexpr const float PI = 3.1415926;
 public:
+    static const double PI;
+    
     Circle(float radius);
     float getRadius();
     float getCircumference();
