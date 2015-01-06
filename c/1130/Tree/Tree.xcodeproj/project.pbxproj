@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B14FB59D1A2AD74E00A270CD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B14FB59C1A2AD74E00A270CD /* main.cpp */; };
 		B14FB5A51A2AD86000A270CD /* tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B14FB5A41A2AD86000A270CD /* tree.cpp */; };
+		B1AE1C1E1A5B719900916515 /* Food.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1AE1C1C1A5B719900916515 /* Food.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B14FB59C1A2AD74E00A270CD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B14FB5A31A2AD7B700A270CD /* tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
 		B14FB5A41A2AD86000A270CD /* tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tree.cpp; sourceTree = "<group>"; };
+		B1AE1C1C1A5B719900916515 /* Food.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Food.cpp; sourceTree = "<group>"; };
+		B1AE1C1D1A5B719900916515 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				B14FB59C1A2AD74E00A270CD /* main.cpp */,
 				B14FB5A31A2AD7B700A270CD /* tree.h */,
 				B14FB5A41A2AD86000A270CD /* tree.cpp */,
+				B1AE1C1C1A5B719900916515 /* Food.cpp */,
+				B1AE1C1D1A5B719900916515 /* Food.h */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AE1C1E1A5B719900916515 /* Food.cpp in Sources */,
 				B14FB59D1A2AD74E00A270CD /* main.cpp in Sources */,
 				B14FB5A51A2AD86000A270CD /* tree.cpp in Sources */,
 			);
@@ -238,6 +244,7 @@
 				B14FB5A21A2AD74E00A270CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
