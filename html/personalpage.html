@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>冉坤 的 个人主页</title>
+</head>
+<style>
+    .container {
+        width: 1004px;
+        margin: 0 auto;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .tip {
+        display: none;
+    }
+</style>
+<body>
+
+<div class="container">
+
+    <div class="center">
+
+        <h1>冉坤 个人主页</h1>
+
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="username">请输入姓名:</label></td>
+                    <td><input id="username" type="text" name="username"/></td>
+                    <td><span class="tip" id="usernameTip">用户名输入错误</span></td>
+                </tr>
+                <tr>
+                    <td><label for="password">请输入密码:</label></td>
+                    <td><input id="password" type="text" name="password"/></td>
+                    <td><span class="tip" id="passwordTip">用户名输入错误</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="submit" value="提交"/>
+                    </td>
+                    <td>
+                        <input type="reset" id="clear" value="清空"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</div>
+
+</body>
+
+<script>
+    var eleUsername = document.getElementById("username");
+    var elePassword = document.getElementById("password");
+    var eleUsernameTip = document.getElementById("usernameTip");
+    var elePasswordTip = document.getElementById("passwordTip");
+
+    var submitButton = document.getElementById("submit");
+    var clearButton = document.getElementById("clear");
+
+    function isBlank(str) {
+        return str == undefined || str == null || str.length == 0 || /^\s*$/.test(str);
+    }
+
+    function clearTip() {
+        eleUsernameTip.style.display = "none";
+        elePasswordTip.style.display = "none";
+    }
+
+    function clearForm() {
+        eleUsername.value = "";
+        elePassword.value = "";
+    }
+
+    function checkForm() {
+
+        var usernameVar = eleUsername.value;
+        var passwordVar = elePassword.value;
+
+        if (isBlank(usernameVar)) {
+            eleUsernameTip.innerText = "用户名有误";
+            eleUsernameTip.style.display = "inline";
+            return false;
+        }
+        if (isBlank(passwordVar)) {
+            elePasswordTip.innerText = "密码有误";
+            elePasswordTip.style.display = "inline";
+            return false;
+        }
+
+        console.log(usernameVar + ":" + passwordVar);
+        clearForm();
+        clearTip();
+    }
+
+    function submit() {
+        checkForm();
+        return false;
+    }
+
+    submitButton.onclick = submit;
+    clearButton.onclick = clearForm;
+    clearButton.onclick = clearTip;
+
+    eleUsername.onkeydown = clearTip;
+    elePassword.onkeydown = clearTip;
+
+</script>
+
+</html>
