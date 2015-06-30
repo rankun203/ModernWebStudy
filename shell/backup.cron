@@ -1,0 +1,4 @@
+#!/usr/bin/env crontab
+# 每天凌晨零点零分定期备份 /user/backup 到 /tmp 目录下
+
+0 0 * * sun cp -r /user/backup /tmp
