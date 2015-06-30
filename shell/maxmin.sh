@@ -25,4 +25,3 @@ do
 done
 
 echo "sum = $sum; max = $max; min = $min"
-  
