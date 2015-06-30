@@ -26,7 +26,7 @@
 
         <h1>冉坤 个人主页</h1>
 
-        <form action="#" method="post">
+        <form action="index.html" method="post">
             <table>
                 <tr>
                     <td><label for="username">请输入姓名:</label></td>
@@ -96,11 +96,12 @@
         console.log(usernameVar + ":" + passwordVar);
         clearForm();
         clearTip();
+
+        return true;
     }
 
     function submit() {
-        checkForm();
-        return false;
+        return checkForm();
     }
 
     submitButton.onclick = submit;

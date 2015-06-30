@@ -1,0 +1,149 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: silk - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\RANKUN~1\AppData\Local\Temp\RSPEB69.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/silk.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp"
+]
+Creating command line "cl.exe @C:\Users\RANKUN~1\AppData\Local\Temp\RSPEB69.tmp" 
+Creating temporary file "C:\Users\RANKUN~1\AppData\Local\Temp\RSPEB6A.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/silk.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\RANKUN~1\AppData\Local\Temp\RSPEB6A.tmp" 
+Creating temporary file "C:\Users\RANKUN~1\AppData\Local\Temp\RSPEB6B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/silk.pdb" /debug /machine:I386 /out:"Debug/silk.exe" /pdbtype:sept 
+".\Debug\StdAfx.obj"
+".\Debug\silk.obj"
+]
+Creating command line "link.exe @C:\Users\RANKUN~1\AppData\Local\Temp\RSPEB6B.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+silk.cpp
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(11) : error C2065: 'SKP_int32' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(11) : error C2146: syntax error : missing ';' before identifier 'args'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(11) : error C2065: 'args' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(11) : error C2065: 'totPackets' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(11) : error C2065: 'i' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(11) : error C2065: 'k' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(12) : error C2065: 'SKP_int16' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(12) : error C2146: syntax error : missing ';' before identifier 'ret'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(12) : error C2065: 'ret' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(12) : error C2065: 'len' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(12) : error C2065: 'tot_len' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(13) : error C2146: syntax error : missing ';' before identifier 'nBytes'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(13) : error C2065: 'nBytes' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(14) : error C2065: 'SKP_uint8' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(14) : error C2146: syntax error : missing ';' before identifier 'payload'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(14) : error C2065: 'payload' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(14) : error C2065: 'MAX_BYTES_PER_FRAME' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(14) : error C2065: 'MAX_INPUT_FRAMES' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(14) : error C2065: 'MAX_LBRR_DELAY' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(14) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(15) : error C2065: 'payloadEnd' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(15) : error C2106: '=' : left operand must be l-value
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(15) : error C2065: 'payloadToDec' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(15) : error C2100: illegal indirection
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(16) : error C2146: syntax error : missing ';' before identifier 'FECpayload'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(16) : error C2065: 'FECpayload' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(16) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(16) : error C2065: 'payloadPtr' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(16) : error C2100: illegal indirection
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(17) : error C2146: syntax error : missing ';' before identifier 'nBytesFEC'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(17) : error C2065: 'nBytesFEC' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(18) : error C2146: syntax error : missing ';' before identifier 'nBytesPerPacket'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(18) : error C2065: 'nBytesPerPacket' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(18) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(18) : error C2065: 'totBytes' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(19) : error C2146: syntax error : missing ';' before identifier 'out'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(19) : error C2065: 'out' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(19) : error C2065: 'FRAME_LENGTH_MS' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(19) : error C2065: 'MAX_API_FS_KHZ' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(19) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(19) : error C2065: 'outPtr' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(19) : error C2100: illegal indirection
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(22) : error C2146: syntax error : missing ';' before identifier 'packetSize_ms'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(22) : error C2065: 'packetSize_ms' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(22) : error C2065: 'API_Fs_Hz' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(23) : error C2146: syntax error : missing ';' before identifier 'decSizeBytes'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(23) : error C2065: 'decSizeBytes' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(25) : error C2065: 'SKP_float' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(25) : error C2146: syntax error : missing ';' before identifier 'loss_prob'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(25) : error C2065: 'loss_prob' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(26) : error C2146: syntax error : missing ';' before identifier 'frames'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(26) : error C2065: 'frames' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(26) : error C2065: 'lost' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(26) : error C2065: 'quiet' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(27) : error C2065: 'SKP_SILK_SDK_DecControlStruct' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(27) : error C2146: syntax error : missing ';' before identifier 'DecControl'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(27) : error C2065: 'DecControl' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(30) : error C2065: 'print_usage' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(31) : error C2065: 'exit' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(36) : warning C4244: '=' : conversion from 'const float' to 'int', possible loss of data
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(40) : error C2065: 'strcpy' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(45) : error C2065: 'SKP_STR_CASEINSENSITIVE_COMPARE' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(62) : error C2065: 'SKP_Silk_SDK_get_version' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(78) : error C2065: 'strlen' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(80) : error C2065: 'strcmp' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(95) : error C2228: left of '.API_sampleRate' must have class/struct/union type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(97) : error C2228: left of '.API_sampleRate' must have class/struct/union type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(101) : error C2228: left of '.framesPerPacket' must have class/struct/union type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(104) : error C2065: 'SKP_Silk_SDK_Get_Decoder_Size' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(108) : error C2065: 'malloc' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(108) : error C2440: '=' : cannot convert from 'int' to 'void *'
+        Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(111) : error C2065: 'SKP_Silk_SDK_InitDecoder' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(130) : error C2146: syntax error : missing ')' before identifier 'counter'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(130) : error C2059: syntax error : ')'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(130) : warning C4018: '<' : signed/unsigned mismatch
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(130) : error C2143: syntax error : missing ';' before '{'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(130) : warning C4552: '<' : operator has no effect; expected operator with side-effect
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(133) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(133) : error C2106: '=' : left operand must be l-value
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(150) : error C2146: syntax error : missing ')' before identifier 'counter'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(150) : error C2059: syntax error : ')'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(150) : warning C4018: '<' : signed/unsigned mismatch
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(150) : error C2143: syntax error : missing ';' before '{'
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(150) : warning C4552: '<' : operator has no effect; expected operator with side-effect
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(155) : error C2065: 'rand_seed' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(155) : error C2065: 'SKP_RAND' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(157) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(157) : error C2106: '=' : left operand must be l-value
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(160) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(160) : error C2106: '=' : left operand must be l-value
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(163) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(170) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(171) : error C2065: 'GetHighResolutionTime' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(172) : error C2065: 'SKP_Silk_SDK_search_for_LBRR' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(172) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(181) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(185) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(199) : error C2065: 'SKP_Silk_SDK_Decode' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(214) : error C2228: left of '.moreInternalDecoderFrames' must have class/struct/union type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(217) : error C2228: left of '.framesPerPacket' must have class/struct/union type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(228) : error C2228: left of '.API_sampleRate' must have class/struct/union type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(241) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(243) : error C2065: 'SKP_memmove' : undeclared identifier
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(243) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(243) : error C2109: subscript requires array or pointer type
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(243) : error C2102: '&' requires l-value
+Z:\rankun203 On My Mac\git\ModernWebStudy\c\1209\silk\silk.cpp(243) : fatal error C1003: error count exceeds 100; stopping compilation
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+silk.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
