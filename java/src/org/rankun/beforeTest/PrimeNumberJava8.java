@@ -13,7 +13,7 @@ public class PrimeNumberJava8 {
         int max = 100_000;
 
         List<Integer> intList = new LinkedList<>();
-        for (int i = 2; i < max; i++) {
+        for (int i = 2; i < max / 2; i++) {
             intList.add(i);
         }
 

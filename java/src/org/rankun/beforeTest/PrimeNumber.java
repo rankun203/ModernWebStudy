@@ -11,7 +11,7 @@ public class PrimeNumber {
 
         long start = System.currentTimeMillis();
 
-        for (int n = 2; n < max; n++) {
+        for (int n = 2; n < max / 2; n++) {
 
             boolean isPrime = true;
             for (int test = 2; test < n; test++) {
