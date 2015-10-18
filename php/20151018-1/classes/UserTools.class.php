@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by IntelliJ IDEA.
- * User: rankun203
- * Date: 10/17/15
- * Time: 6:10 PM
+ * 张博
  */
 
 require_once 'User.class.php';

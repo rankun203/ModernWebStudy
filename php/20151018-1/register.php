@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by IntelliJ IDEA.
- * User: rankun203
- * Date: 10/17/15
- * Time: 6:06 PM
+ * 张博
  */
 
 //register.php
