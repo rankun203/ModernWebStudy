@@ -1,0 +1,21 @@
+{
+  "name": "20151018-1",
+  "homepage": "https://github.com/rankun203/ModernWebStudy",
+  "authors": [
+    "rankun203 <rankun203@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
