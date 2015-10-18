@@ -29,7 +29,6 @@ CREATE TABLE `blog` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(1024) DEFAULT '',
   `content` text,
-  `type` varchar(4) DEFAULT NULL COMMENT 'htm, pre, md',
   `create_time` datetime DEFAULT NULL,
   `update_time` datetime DEFAULT NULL,
   `is_deleted` bit(2) DEFAULT NULL,
@@ -40,11 +39,10 @@ CREATE TABLE `blog` (
 LOCK TABLES `blog` WRITE;
 /*!40000 ALTER TABLE `blog` DISABLE KEYS */;
 
-INSERT INTO `blog` (`id`, `title`, `content`, `type`, `create_time`, `update_time`, `is_deleted`, `delete_time`)
+INSERT INTO `blog` (`id`, `title`, `content`, `create_time`, `update_time`, `is_deleted`, `delete_time`)
 VALUES
-  (1,'第一篇博客!','我是大名鼎鼎的内容!','htm','2015-10-18 19:50:05','2015-10-18 19:50:09',00000000,NULL),
-  (3,'我是第一篇 Programmed blog!','我是内容, 我是内容, 好高兴好高兴, 哈哈哈哈~~~~','htm',NULL,NULL,00000000,NULL),
-  (4,'我是第三篇, 录屏的噢~','blablablabla~~~','htm',NULL,NULL,00000000,NULL);
+  (1,'博客发布了','你好!','2015-10-18 19:50:05','2015-10-18 19:50:09',00000000,NULL),
+  (3,'好吧','我还是博客',NULL,NULL,00000000,NULL);
 
 /*!40000 ALTER TABLE `blog` ENABLE KEYS */;
 UNLOCK TABLES;

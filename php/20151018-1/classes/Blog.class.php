@@ -14,7 +14,6 @@ class Blog
     public $id;
     public $title;
     public $content;
-    public $type;
     public $create_time;
     public $update_time;
     public $is_deleted;
@@ -25,7 +24,6 @@ class Blog
         $this->id = (isset($data['id'])) ? $data['id'] : '';
         $this->title = (isset($data['title'])) ? $data['title'] : '';
         $this->content = (isset($data['content'])) ? $data['content'] : '';
-        $this->type = (isset($data['type'])) ? $data['type'] : 'htm';
         $this->is_deleted = (isset($data['is_deleted'])) ? $data['is_deleted'] : false;
     }
 
@@ -36,8 +34,7 @@ class Blog
         $data = array(
             'title' => "'" . mysql_escape_string($this->title) . "'",
             'content' => "'" . mysql_escape_string($this->content) . "'",
-            'type' => "'" . mysql_escape_string($this->type) . "'",
-            'is_deleted' => 'false',
+            'is_deleted' => 'false'
         );
 
         $this->id = $db->insert($data, 'blog');
