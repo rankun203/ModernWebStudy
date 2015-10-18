@@ -15,6 +15,7 @@ class DB {
 	
 	public function connect() {
 		$connection = mysql_connect($this->db_host, $this->db_user, $this->db_pass);
+        mysql_set_charset('utf8',$connection);
 		mysql_select_db($this->db_name);
 		
 		return true;
@@ -42,6 +43,12 @@ class DB {
 		
 		return $this->processRowSet($result);
 	}
+
+    public function selectList($table, $where)
+    {
+        $sql = "SELECT * FROM $table WHERE $where";
+        return mysql_query($sql);
+    }
 	
 	public function update($data, $table, $where) {
 		foreach ($data as $column => $value) {
@@ -64,7 +71,7 @@ class DB {
 		}
 		
 		$sql = "insert into $table ($columns) values ($values)";
-				
+
 		mysql_query($sql) or die(mysql_error());
 		
 		//return the ID of the user in the database.

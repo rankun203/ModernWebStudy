@@ -1,3 +1,4 @@
+use php_blog;
 # ************************************************************
 # rankun203
 # Version 4135
@@ -25,3 +26,5 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `join_date`)
 VALUES (1, 'zhangbo', '96e79218965eb72c92a549dd5a330112', 'zhangbo@qq.com', '2015-10-18 09:26:45');
 
+SELECT * FROM blog
+WHERE 1=1;

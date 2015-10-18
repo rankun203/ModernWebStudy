@@ -34,13 +34,10 @@ class Blog
         $db = new DB();
 
         $data = array(
-            'title' => "$this->title",
-            'content' => "$this->content",
-            'type' => "$this->type",
-            'create_time' => "'" . date('Y-m-d H:i:s', time()) . "'",
-            'update_time' => "'" . date('Y-m-d H:i:s', time()) . "'",
+            'title' => "'" . mysql_escape_string($this->title) . "'",
+            'content' => "'" . mysql_escape_string($this->content) . "'",
+            'type' => "'" . mysql_escape_string($this->type) . "'",
             'is_deleted' => 'false',
-            'delete_time' => "$this->delete_time"
         );
 
         $this->id = $db->insert($data, 'blog');

@@ -48,7 +48,7 @@ if (isset($_POST['submit-form'])) {
 
         $userTools->login($username, $password);
 
-        header("Location: index.php");
+        header('Location: index.php');
 
     }
 
@@ -57,20 +57,111 @@ if (isset($_POST['submit-form'])) {
 ?>
 
 
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <title>Registration</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="./bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="./bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-<?php echo ($error != "") ? $error : ""; ?>
-<form action="register.php" method="post">
 
-    Username: <input type="text" value="<?php echo $username; ?>" name="username"/><br/>
-    Password: <input type="password" value="<?php echo $password; ?>" name="password"/><br/>
-    Password (confirm): <input type="password" value="<?php echo $password_confirm; ?>" name="password-confirm"/><br/>
-    E-Mail: <input type="text" value="<?php echo $email; ?>" name="email"/><br/>
-    <input type="submit" value="Register" name="submit-form"/>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php">冉坤的博客</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.php">Blog</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="post.php">发布文章</a></li>
+                <li><a href="settings.php">设置</a></li>
+                <?php
+                if ($user) { ?>
+                    <li><a href="logout.php">退出登录 (<?php echo $user->username ?>)</a></li>
+                <?php } else { ?>
+                    <li class="active"><a href="login.php">登录</a></li>
+                <?php }
+                ?>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
 
-</form>
+<div class="container">
+
+    <div class="main-item">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">登录到博客</h3>
+            </div>
+            <div class="panel-body">
+                <?php
+                if ($message) {
+                    ?>
+                    <div class="alert alert-info" role="alert">
+                        <strong>提示: </strong> <?php echo $error; ?>
+                    </div>
+                    <?php
+                }
+                ?>
+                <form action="register.php" method="post">
+                    <table class="table-form">
+                        <tr>
+                            <td><label>Username:</label></td>
+                            <td><input type="text" class="form-control" name="username" value="<?php echo $username; ?>"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Password:</label></td>
+                            <td><input type="password" class="form-control" name="password" value="<?php echo $password; ?>"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Password (确认):</label></td>
+                            <td><input type="password" class="form-control" value="<?php echo $password_confirm; ?>" name="password-confirm"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>E-Mail:</label></td>
+                            <td><input type="text" class="form-control" value="<?php echo $email; ?>" name="email"/></td>
+                        </tr>
+                    </table><br>
+                    <input type="submit" class="btn btn-default" value="Register" name="submit-form"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<footer class="blog-footer">
+    <p>by <a href="http://blog.rankun.org">@rankun203</a>.</p>
+
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
+
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-</html>
