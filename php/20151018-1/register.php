@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: rankun203
+ * Date: 10/17/15
+ * Time: 6:06 PM
+ */
+
 //register.php
 
 require_once 'includes/global.inc.php';
@@ -53,7 +60,7 @@ if (isset($_POST['submit-form'])) {
         $userTools->login($username, $password);
 
         //redirect them to a welcome page
-        header("Location: welcome.php");
+        header("Location: index.php");
 
     }
 

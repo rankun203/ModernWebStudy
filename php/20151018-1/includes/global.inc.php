@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: rankun203
+ * Date: 10/17/15
+ * Time: 6:20 PM
+ */
+
 //global.inc.php
 
 require_once 'classes/User.class.php';

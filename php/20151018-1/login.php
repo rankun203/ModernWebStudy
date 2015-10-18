@@ -1,5 +1,11 @@
 <?php
-//login.php
+/**
+ * Created by IntelliJ IDEA.
+ * User: rankun203
+ * Date: 10/17/15
+ * Time: 6:01 PM
+ */
+
 
 require_once 'includes/global.inc.php';
 error_reporting(E_ERROR);
