@@ -18,8 +18,6 @@ class User {
 	public $email;
 	public $joinDate;
 
-	//Constructor is called whenever a new object is created.
-	//Takes an associative array with the DB row as an argument.
 	function __construct($data) {
 		$this->id = (isset($data['id'])) ? $data['id'] : "";
 		$this->username = (isset($data['username'])) ? $data['username'] : "";
@@ -29,23 +27,17 @@ class User {
 	}
 
 	public function save($isNewUser = false) {
-		//create a new database object.
 		$db = new DB();
 		
-		//if the user is already registered and we're
-		//just updating their info.
 		if(!$isNewUser) {
-			//set the data array
 			$data = array(
 				"username" => "'$this->username'",
 				"password" => "'$this->hashedPassword'",
 				"email" => "'$this->email'"
 			);
 			
-			//update the row in the database
 			$db->update($data, 'users', 'id = '.$this->id);
 		}else {
-		//if the user is being registered for the first time.
 			$data = array(
 				"username" => "'$this->username'",
 				"password" => "'$this->hashedPassword'",
@@ -61,4 +53,3 @@ class User {
 	
 }
 
-?>

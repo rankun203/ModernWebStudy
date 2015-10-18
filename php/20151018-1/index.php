@@ -9,12 +9,10 @@
 require_once 'includes/global.inc.php';
 error_reporting(E_ERROR);
 
-//check to see if they're logged in
 if (!isset($_SESSION['logged_in'])) {
     header('Location: login.php');
 }
 
-//get the user object from the session
 $user = unserialize($_SESSION['user']);
 
 ?>
