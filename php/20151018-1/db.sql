@@ -70,7 +70,7 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `join_date`)
 VALUES
-  (2,'rankun203','96e79218965eb72c92a549dd5a330112','rankun203@gmail.com','2015-10-18 10:39:01');
+  (1,'zhangbo','96e79218965eb72c92a549dd5a330112','zhangbo@qq.com','2015-10-18 09:26:45');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
